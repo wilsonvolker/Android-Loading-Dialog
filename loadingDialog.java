@@ -34,6 +34,7 @@ public class loadingDialog extends Dialog {
             View layout = inflater.inflate(R.layout.loading_dialog, null);
 
             dialog.setContentView(layout);
+            dialog.setCancelable(false);
             dialog.setCanceledOnTouchOutside(false);
             dialog.show();
         }
